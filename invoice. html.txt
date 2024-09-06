@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Create Invoice</h2>
+    <form method="POST">
+        <input type="text" name="client_name" placeholder="Client Name" required><br>
+        <input type="number" name="amount" placeholder="Amount" step="0.01" required><br>
+        <input type="submit" value="Create Invoice">
+    </form>
+</body>
+</html>
